@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eazy Mechanics - Professional Automotive Services | Secunda, Mpumalanga</title>
+    <meta name="description" content="Premier car and motorcycle maintenance services in Secunda, Mpumalanga. Expert mechanics providing quality automotive repair and diagnostics with professional service.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Eazy Mechanics - Professional Automotive Services">
+    <meta property="og:description" content="Premier car and motorcycle maintenance services in Secunda, Mpumalanga. Expert mechanics providing quality automotive repair and diagnostics.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="wrench-solid-full.svg" type="image/x-icon">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-wrench nav-icon"></i>
+                <span class="brand-text">Eazy Mechanics</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link" data-testid="nav-home">Home</a>
+                <a href="#about" class="nav-link" data-testid="nav-about">About</a>
+                <a href="#services" class="nav-link" data-testid="nav-services">Services</a>
+                <a href="#contact" class="nav-link" data-testid="nav-contact">Contact</a>
+            </div>
+            
+            <button class="nav-toggle" id="nav-toggle" data-testid="button-mobile-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080" 
+                 alt="Modern automotive service garage" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title" data-testid="text-hero-title">
+                    <span class="title-main">Eazy</span>
+                    <span class="title-accent"> Mechanics</span>
+                </h1>
+                <p class="hero-subtitle" data-testid="text-hero-subtitle">
+                    Your premier destination for car and motorcycle maintenance services in Secunda, Mpumalanga.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')" data-testid="button-hero-contact">
+                        <i class="fas fa-phone"></i>
+                        Contact Us Today
+                    </button>
+                    <button class="btn btn-outline" onclick="scrollToSection('services')" data-testid="button-hero-services">
+                        <i class="fas fa-bolt"></i>
+                        View Services
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <button onclick="scrollToSection('about')" class="scroll-btn" data-testid="button-scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="section-title" data-testid="text-about-title">
+                        About <span class="text-accent">Eazy Mechanics</span>
+                    </h2>
+                    <p class="about-description" data-testid="text-about-description">
+                        We are your premier destination for car and motorcycle maintenance services. With a team of experienced mechanics and a commitment to high-quality service, we strive to exceed customer expectations.
+                    </p>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-tag"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Experienced Team</h3>
+                                <p>Skilled mechanics</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Quality Service</h3>
+                                <p>Excellence guaranteed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                         alt="Professional mechanics working in a modern automotive garage" 
+                         data-testid="img-about-team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-testid="text-services-title">
+                    Our <span class="text-accent">Services</span>
+                </h2>
+                <p class="section-description" data-testid="text-services-description">
+                    Professional automotive maintenance and repair services for both cars and motorcycles. 
+                    Quality workmanship you can trust.
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-testid="card-service-car">
+                    <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
+                         alt="Car engine maintenance and repair work" class="service-image">
+                    <div class="service-content">
+                        <h3 class="service-title">Car Maintenance</h3>
+                        <p class="service-description">Comprehensive car servicing, engine repairs, and preventive maintenance to keep your vehicle running smoothly.</p>
+                        <div class="service-feature">
+                            <i class="fas fa-car"></i>
+                            <span>Professional Service</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-testid="card-service-motorcycle">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
+                         alt="Motorcycle repair and maintenance in professional workshop" class="service-image">
+                    <div class="service-content">
+                        <h3 class="service-title">Motorcycle Service</h3>
+                        <p class="service-description">Expert motorcycle maintenance, repairs, and tune-ups for all makes and models with specialized care.</p>
+                        <div class="service-feature">
+                            <i class="fas fa-motorcycle"></i>
+                            <span>Specialized Care</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-testid="card-service-diagnostics">
+                    <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
+                         alt="Mechanic using computerized diagnostic scanner on car engine" class="service-image">
+                    <div class="service-content">
+                        <h3 class="service-title">Diagnostics</h3>
+                        <p class="service-description">Advanced diagnostic services using modern equipment to identify and resolve complex automotive issues.</p>
+                        <div class="service-feature">
+                            <i class="fas fa-search"></i>
+                            <span>Advanced Technology</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projects Showcase -->
+            <div class="projects-section">
+                <h3 class="projects-title" data-testid="text-projects-title">
+                    Recent <span class="text-accent">Projects</span>
+                </h3>
+                
+                <div class="projects-grid">
+                    <div class="project-item" data-testid="project-engine-service">
+                        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300" 
+                             alt="Car maintenance work showing detailed engine bay service" class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <p class="project-name">Engine Service</p>
+                                <p class="project-desc">Complete overhaul</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item" data-testid="project-brake-service">
+                        <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300" 
+                             alt="Motorcycle wheel and brake maintenance work in progress" class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <p class="project-name">Brake Service</p>
+                                <p class="project-desc">Safety first</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item" data-testid="project-body-work">
+                        <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300" 
+                             alt="Professional car body work and detailing service" class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <p class="project-name">Body Work</p>
+                                <p class="project-desc">Restoration</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item" data-testid="project-diagnostics">
+                        <img src="https://images.unsplash.com/photo-1504610926078-a1611febcad3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300" 
+                             alt="Professional automotive technician performing diagnostic testing" class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <p class="project-name">Diagnostics</p>
+                                <p class="project-desc">Precision testing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Features -->
+            <div class="service-features">
+                <div class="feature-card" data-testid="feature-quick-turnaround">
+                    <div class="feature-icon-large">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="feature-title">Quick Turnaround</h3>
+                    <p class="feature-description">Fast and efficient service to get you back on the road quickly.</p>
+                </div>
+                
+                <div class="feature-card" data-testid="feature-quality-guarantee">
+                    <div class="feature-icon-large">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Quality Guarantee</h3>
+                    <p class="feature-description">All our work comes with comprehensive warranty coverage.</p>
+                </div>
+                
+                <div class="feature-card" data-testid="feature-modern-equipment">
+                    <div class="feature-icon-large">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="feature-title">Modern Equipment</h3>
+                    <p class="feature-description">State-of-the-art tools and diagnostic equipment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-testid="text-contact-title">
+                    Get In <span class="text-accent">Touch</span>
+                </h2>
+                <p class="section-description" data-testid="text-contact-description">
+                    Ready to service your vehicle? Contact us today for professional automotive care.
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item" data-testid="contact-phone">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>Call us for immediate assistance</p>
+                            <a href="tel:0176312051" class="contact-link" data-testid="link-phone">017 631 2051</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item" data-testid="contact-email">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>Send us your service inquiries</p>
+                            <a href="mailto:office@eazymechanics.co.za" class="contact-link" data-testid="link-email">office@eazymechanics.co.za</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item" data-testid="contact-location">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Visit our workshop</p>
+                            <p class="location-text">
+                                Secunda, Mpumalanga<br>
+                                South Africa
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="business-hours" data-testid="card-business-hours">
+                        <h3>Business Hours</h3>
+                        <div class="hours-list">
+                            <div class="hour-item">
+                                <span>Monday - Friday</span>
+                                <span class="time">8:00 AM - 5:00 PM</span>
+                            </div>
+                            <div class="hour-item">
+                                <span>Saturday</span>
+                                <span class="time">8:00 AM - 2:00 PM</span>
+                            </div>
+                            <div class="hour-item">
+                                <span>Sunday</span>
+                                <span class="time closed">Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container" data-testid="card-contact-form">
+                    <h3 class="form-title">Send us a Message</h3>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required data-testid="input-name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required data-testid="input-email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vehicle">Vehicle Type</label>
+                            <select id="vehicle" name="vehicle" data-testid="select-vehicle">
+                                <option value="">Select vehicle type</option>
+                                <option value="car">Car</option>
+                                <option value="motorcycle">Motorcycle</option>
+                                <option value="both">Both</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required data-testid="textarea-message" placeholder="Tell us about your service needs..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary form-submit" data-testid="button-submit-form">
+                            <i class="fas fa-envelope"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-wrench"></i>
+                        <span class="brand-text">Eazy Mechanics</span>
+                    </div>
+                    <p class="footer-description" data-testid="text-footer-description">
+                        Premier car and motorcycle maintenance services in Secunda, Mpumalanga.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" data-testid="link-social-facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link" data-testid="link-social-instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services" class="footer-link" data-testid="footer-link-car-maintenance">Car Maintenance</a></li>
+                        <li><a href="#services" class="footer-link" data-testid="footer-link-motorcycle-service">Motorcycle Service</a></li>
+                        <li><a href="#services" class="footer-link" data-testid="footer-link-diagnostics">Diagnostics</a></li>
+                        <li><a href="#services" class="footer-link" data-testid="footer-link-emergency-repairs">Emergency Repairs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <div class="footer-contacts">
+                        <p class="footer-contact">
+                            <i class="fas fa-phone"></i>
+                            <span data-testid="text-footer-phone">017 631 2051</span>
+                        </p>
+                        <p class="footer-contact">
+                            <i class="fas fa-envelope"></i>
+                            <span data-testid="text-footer-email">office@eazymechanics.co.za</span>
+                        </p>
+                        <p class="footer-contact">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-testid="text-footer-location">Secunda, Mpumalanga</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright" data-testid="text-copyright">
+                    © 2024 Eazy Mechanics. All rights reserved. | Professional automotive services in Secunda, Mpumalanga.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast notification -->
+    <div id="toast" class="toast"></div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
