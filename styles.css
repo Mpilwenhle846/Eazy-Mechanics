@@ -811,26 +811,95 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .nav-container {
+        padding: 0.75rem 1rem;
+    }
+
+    .nav-brand {
+        flex: 1;
+        justify-content: flex-start;
+    }
+
+    .nav-icon {
+        font-size: 1.75rem;
+    }
+
+    .brand-text {
+        font-size: 1.125rem;
+        font-weight: bold;
+    }
+
     .nav-menu {
         position: fixed;
         top: 100%;
         left: 0;
         right: 0;
-        background: var(--card);
+        background: rgba(24, 24, 27, 0.98);
+        backdrop-filter: blur(10px);
         border-top: 1px solid var(--border);
         flex-direction: column;
-        padding: 1rem;
+        padding: 1.5rem;
         gap: 1rem;
         transform: translateY(-100%);
-        transition: transform 0.3s ease;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.25);
     }
 
     .nav-menu.active {
         transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-link {
+        padding: 0.75rem 0;
+        font-size: 1.125rem;
+        font-weight: 500;
+        border-bottom: 1px solid var(--border);
+        text-align: center;
+    }
+
+    .nav-link:last-child {
+        border-bottom: none;
     }
 
     .nav-toggle {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 2.5rem;
+        height: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem 0;
+        position: relative;
+        z-index: 1001;
+    }
+
+    .hamburger-line {
+        width: 24px;
+        height: 2px;
+        background: var(--foreground);
+        transition: all 0.3s ease;
+        transform-origin: center;
+    }
+
+    /* Hamburger animation */
+    .nav-toggle.active .hamburger-line:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .nav-toggle.active .hamburger-line:nth-child(2) {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    .nav-toggle.active .hamburger-line:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
     }
 
     .hero-buttons {
